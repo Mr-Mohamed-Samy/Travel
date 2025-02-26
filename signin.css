@@ -1,0 +1,104 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    height: 70%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    background-color: #4D0176;
+    color: white;
+    border-radius: 50px;
+}
+.signup{
+    height: 70%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    color: black;
+    border-radius: 50px;
+}
+.det1{
+    height: 15%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 10%;
+}
+.det2{
+    height: 15%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 10%;
+}
+.inputin{
+    height: 35%;
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+.inputin:focus{
+    outline: none;
+}
+.inputup{
+    height: 35%;
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+.inputup:focus{
+    outline: none;
+}
+.upina{
+    text-decoration: none;
+    color: black;
+}
+.ina{
+    text-decoration: none;
+    color: white;
+}
+.inupa{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    height: 10%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit1{
+    height: 100%;
+    width: 100%;
+    background-color:white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+.submit2{
+    height: 100%;
+    width: 100%;
+    background-color:white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}

@@ -1,0 +1,268 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: flex ;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.navbar {
+    background-color: #4D0176;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    font-family: cursive ;
+}
+
+.image {
+    height: 50px;
+    width: 250px;
+}
+
+.input {
+    height: 40px;
+    width: 350px;
+    border-radius: 10px;
+    border: 0;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.list {
+    width: 450px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    transition: font-size 0.3s ease;
+    font-size: 25px;
+}
+
+li:hover {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.more{
+    height: 40px;
+}
+.morebtn{
+    display: none;
+    background-color: #4D0176;
+    border: none;
+}
+.options{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 130px;
+    background-color: #4D0176;
+    margin: 0;
+    position: absolute;
+    top: 21%; 
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+.MyOps{
+    display: none;
+    flex-direction: column ;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    font-family: cursive ;
+
+}
+.destinations{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 50px;
+    
+}
+.destination {
+    color: white;
+    height: 50vh; 
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding-left: 30px; 
+    padding-top: 30px; 
+    padding-right: 30px; 
+    position: relative; 
+    overflow: hidden;
+}
+
+.destination::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+  
+.destination h1,
+.destination p {
+    position: relative;
+    z-index: 2; 
+    margin: 0; 
+}
+
+.algiers::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('algiers.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease; 
+  } 
+.oran::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('oran.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease; 
+}
+
+.constantine::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('constantine.PNG'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease; 
+}
+
+.destination:hover::before {
+    transform: scale(1.1); 
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index:2;
+  }
+  
+.detail {
+    margin-top: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.hotels h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+.picture {
+    width: 100px; 
+    height: 90px;
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: transform 0.5s ease;   
+}
+
+.picture:hover {
+    transform: scale(1.1); 
+}
+@media (max-width: 1200px) {
+    .image{
+        height: 40px;
+        width: 250px;
+    }
+    .input{
+        width: 250px;
+        height: 30px;
+        font-size: 11px;
+    }
+    .morebtn{
+        display: flex;
+    }
+    .list{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+   
+    .input{
+        width: 350px;
+        height: 40px;
+        font-size: 15px;
+    }
+}    
+
+@media (max-width: 430px) {
+    .image{
+        height: 30px;
+        width: 130px;
+    }
+    .input{
+        width: 180px;
+        height: 30px;
+        font-size: 11px;
+    }
+    .morebtn{
+        display: flex;
+    }
+    .list{
+        display: none;
+    }
+}
